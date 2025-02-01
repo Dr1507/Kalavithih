@@ -1,0 +1,132 @@
+
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, #1a1a2e, #16213e);
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: #f31259; /* Gold hover effect */
+  border-bottom: 2px solid #f31259;
+}
+
+/* Mobile Menu */
+.menu-icon {
+  display: none;
+  font-size: 1.8em;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #16213e;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+} */
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Increase Logo Size */
+.navbar-logo {
+  color: #fff;
+  font-size: 2.5em; /* Increase font size */
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Align Menu Links to Right */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin-left: auto; /* Push to the right */
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #e9444d; /* Gold color on hover */
+}
