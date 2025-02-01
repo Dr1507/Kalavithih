@@ -16,7 +16,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import HomePage from "./Product/Homepage";
-import AddProduct from './Admin/Addproduct';
+import AddProduct from './Product/Addproduct';
 
 function App() {
   return (
