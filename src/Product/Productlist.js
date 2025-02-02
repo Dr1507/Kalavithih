@@ -3,28 +3,28 @@ import Product from './Product';
 
 const products = [
   {
-    image:'/Images/wall_clock.jpg',
+    image:'./Images/wall_clock.jpg',
     title: 'Photo wall clock',
     description: 'Size : 12 inch circle .Different Color and design available.',
     price: 'starting from 1699rs.',
     category: 'Clocks'
   },
   {
-    image:'/Images/wall_clock1.jpg',
+    image:'./Images/wall_clock1.jpg',
     title: 'Photo wall clock',
     description: 'Size : 12 inch circle .Different Color and design available.',
     price: 'starting from 1699rs.',
     category: 'Clocks'
   },
   {
-    image: '/Images/varmala_presevation.jpg',
+    image: './Images/varmala_presevation.jpg',
     title: 'Varmala preservation in resin with name date and quote',
     description: 'Size : 12 inch circle , customization available.',
     price: 'starting from 2999rs',
     category: 'Varmala Resin Accessories'
   },
   {
-    image: '/Images/varmala_preservation_1.jpg',
+    image: './Images/varmala_preservation_1.jpg',
     title: 'Varmala preservation in resin with name date and quote',
     description: 'Size : 12 inch circle , customization available.',
     price: 'starting from 2999rs',

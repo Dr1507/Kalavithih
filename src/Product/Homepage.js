@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Nav_bar';
+import Navbar from './Nav_bar.js';
 import ProductList from './Productlist';
 
 const HomePage = () => {
