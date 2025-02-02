@@ -1,22 +1,15 @@
-import React, { useState } from "react";
-import { useMediaQuery } from "react-responsive";
-import Navbar from "./Nav_bar.js";
-import MobileNavbar from "./MobileNavbar.js";
-import ProductList from "./Productlist";
+import React, { useState } from 'react';
+import Navbar from './Nav_bar.js';
+import ProductList from './Productlist';
 
 const HomePage = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-
-  // Detect if the screen width is less than or equal to 768px
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const [searchQuery, setSearchQuery] = useState('');
 
   return (
     <div className="homepage">
-      {/* Use MobileNavbar on small screens, Navbar on larger screens */}
-      {isMobile ? <MobileNavbar /> : <Navbar />}
-
-      <main style={{ paddingTop: "80px", textAlign: "center" }}>
-        <input
+      <Navbar />
+      <main style={{ paddingTop: '80px', textAlign: 'center' }}>
+      <input
           type="text"
           placeholder="Search products..."
           value={searchQuery}
@@ -33,6 +26,7 @@ const HomePage = () => {
           }}
         />
 
+        
         <ProductList searchQuery={searchQuery} />
       </main>
     </div>
