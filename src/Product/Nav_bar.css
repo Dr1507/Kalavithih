@@ -131,3 +131,45 @@
 .navbar-links a:hover {
   color: #e9444d; /* Gold color on hover */
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(90deg, #1a1a2e, #16213e);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    background: #16213e;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.8em;
+    color: #fff;
+    cursor: pointer;
+  }
+}

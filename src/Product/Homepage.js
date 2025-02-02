@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import Navbar from './Nav_bar.js';
+import MobileNavbar from './MobileNavbar.js';
 import ProductList from './Productlist';
 
 const HomePage = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
     <div className="homepage">
-      <Navbar />
+      {isMobile ? <MobileNavbar /> : <Navbar />}
       <main style={{ paddingTop: '80px', textAlign: 'center' }}>
         <input
           type="text"
@@ -22,11 +25,10 @@ const HomePage = () => {
             borderRadius: '8px',
             border: '1px solid #ccc',
             outline: 'none',
-            marginBottom: '20px'
+            marginBottom: '20px',
           }}
         />
 
-        
         <ProductList searchQuery={searchQuery} />
       </main>
     </div>
